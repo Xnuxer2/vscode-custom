@@ -3,7 +3,8 @@
   "workbench.colorCustomizations": {
     "inlineparameters.annotationBackground": "#282A3600",
     "inlineparameters.annotationForeground": "#7b82af",
-    "scrollbar.shadow": "#ede50d00"
+    "scrollbar.shadow": "#ede50d00",
+    "terminalCursor.foreground": "#C45DFF",
   },
   "workbench.iconTheme": "helium-icon-theme",
   "workbench.colorTheme": "Catppuccin Frappé",
@@ -17,6 +18,7 @@
   "workbench.sideBar.location": "right",
   "workbench.tips.enabled": false,
   "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
 
   /** ------------ Breadcrumbs Configurations ------------ **/
   "breadcrumbs.enabled": false,
@@ -49,16 +51,6 @@
   "editor.wordWrapColumn": 120,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-  /*** Code**/ // Include "-" in word selection.
-  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
-  "emmet.includeLanguages": {
-    "blade": "html",
-    "vue-html": "html",
-    "vue": "html",
-    "react": "html",
-    "javascript": "html"
-  },
-
   /*** Prettier**/
     "[javascript]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -89,14 +81,16 @@
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
   "prettier.tabWidth": 4,
+  "scm.diffDecorations": "none",
   "[html]": {
-        "editor.defaultFormatter": "apility.beautify-blade",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
     },
     "window.zoomLevel": 2,
     "window.menuBarVisibility": "toggle",
-    "window.customTitleBarVisibility": "never",
     "window.titleBarStyle": "native",
+    "window.commandCenter": false,
+    "window.title": " ",
     "files.autoSave": "afterDelay",
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -139,6 +133,13 @@
       }
     ]
   },
+
+  /** ------------ Terminal Configurations ------------ **/
+  "terminal.integrated.fontFamily":"Fira Code,  JetBrains Mono, Monospace",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.lineHeight": 1.5,
 
   /** ------------ Additional Configurations ------------ **/
   "vscode_custom_css.imports": [
